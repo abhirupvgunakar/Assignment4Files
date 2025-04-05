@@ -2,8 +2,6 @@
 <Hotels xmlns="http://venus.sod.asu.edu/WSRepository/xml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://venus.sod.asu.edu/WSRepository/xml Hotels.xsd">
-
-  <!-- 1) Marriott Tempe at The Buttes -->
   <Hotel Rating="4.2">
     <Name>Marriott Tempe at The Buttes</Name>
     <Phone>480-968-8885</Phone>
@@ -15,12 +13,10 @@
       <Zip>85283</Zip>
     </Address>
   </Hotel>
-
-  <!-- 2) Drury Inn & Suites Phoenix -->
   <Hotel Rating="3.7">
     <Name>Drury Inn &amp; Suites Phoenix</Name>
     <Phone>602-999-9999</Phone>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>300</Number>
       <Street>West Camelback Rd</Street>
       <City>Phoenix</City>
@@ -28,8 +24,6 @@
       <Zip>85017</Zip>
     </Address>
   </Hotel>
-
-  <!-- 3) Kimpton Hotel Palomar -->
   <Hotel Rating="4.5">
     <Name>Kimpton Hotel Palomar</Name>
     <Phone>602-220-4400</Phone>
@@ -42,12 +36,10 @@
       <Zip>85004</Zip>
     </Address>
   </Hotel>
-
-  <!-- 4) DoubleTree by Hilton Phoenix Mesa -->
   <Hotel Rating="4.0">
     <Name>DoubleTree by Hilton Phoenix Mesa</Name>
     <Phone>480-833-5555</Phone>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>101</Number>
       <Street>North 1st St</Street>
       <City>Mesa</City>
@@ -55,8 +47,6 @@
       <Zip>85201</Zip>
     </Address>
   </Hotel>
-
-  <!-- 5) Westin Tempe -->
   <Hotel Rating="4.3">
     <Name>Westin Tempe</Name>
     <Phone>480-942-4000</Phone>
@@ -69,12 +59,10 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-
-  <!-- 6) Hilton Garden Inn Scottsdale -->
   <Hotel Rating="3.9">
     <Name>Hilton Garden Inn Scottsdale</Name>
     <Phone>480-812-3456</Phone>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>120</Number>
       <Street>North Drinkwater Blvd</Street>
       <City>Scottsdale</City>
@@ -82,8 +70,6 @@
       <Zip>85251</Zip>
     </Address>
   </Hotel>
-
-  <!-- 7) Aloft Phoenix Airport -->
   <Hotel Rating="3.5">
     <Name>Aloft Phoenix Airport</Name>
     <Phone>602-234-5678</Phone>
@@ -96,12 +82,10 @@
       <Zip>85008</Zip>
     </Address>
   </Hotel>
-
-  <!-- 8) Courtyard by Marriott Phoenix Mesa -->
   <Hotel Rating="3.6">
     <Name>Courtyard by Marriott Phoenix Mesa</Name>
     <Phone>480-000-1111</Phone>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>600</Number>
       <Street>East University Dr</Street>
       <City>Mesa</City>
@@ -109,8 +93,6 @@
       <Zip>85207</Zip>
     </Address>
   </Hotel>
-
-  <!-- 9) Sheraton Downtown Phoenix -->
   <Hotel Rating="4.1">
     <Name>Sheraton Downtown Phoenix</Name>
     <Phone>602-111-2222</Phone>
@@ -123,12 +105,10 @@
       <Zip>85004</Zip>
     </Address>
   </Hotel>
-
-  <!-- 10) The Phoenician -->
   <Hotel Rating="4.7">
     <Name>The Phoenician</Name>
     <Phone>480-945-2565</Phone>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>6000</Number>
       <Street>E Camelback Rd</Street>
       <City>Scottsdale</City>
@@ -136,12 +116,10 @@
       <Zip>85251</Zip>
     </Address>
   </Hotel>
-
-  <!-- 11) Motel 6 Phoenix East -->
   <Hotel Rating="2.8">
     <Name>Motel 6 Phoenix East</Name>
     <Phone>480-888-6666</Phone>
-    <Address>
+    <Address NearestAirport="Sky Harbor">
       <Number>900</Number>
       <Street>Apache Blvd</Street>
       <City>Tempe</City>
@@ -149,5 +127,4 @@
       <Zip>85287</Zip>
     </Address>
   </Hotel>
-
 </Hotels>
