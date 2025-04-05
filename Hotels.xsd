@@ -4,25 +4,38 @@
             targetNamespace="http://venus.sod.asu.edu/WSRepository/xml"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified">
+
+  <!-- This schema defines the structure of the Hotels XML document. -->
+  <!-- It specifies the elements, attributes, and their data types. -->
+  <!-- This is the root element of the XML document. -->
+
   <xsd:element name="Hotels" type="HotelsType"/>
+
+  <!-- The Hotels element contains one or more Hotel elements. -->
   <xsd:complexType name="HotelsType">
     <xsd:sequence>
-      <xsd:element name="Hotel" type="HotelDetails" minOccurs="1" maxOccurs="unbounded"/>
+        <xsd:element name="Hotel" type="HotelDetails" minOccurs="1" maxOccurs="unbounded"/>
     </xsd:sequence>
   </xsd:complexType>
+
+  <!-- Each Hotel element contains details about a hotel. -->
   <xsd:complexType name="HotelDetails">
     <xsd:sequence>
-      <xsd:element name="Name" type="xsd:string"/>
-      <xsd:element name="Phone" type="PhoneNumberType" minOccurs="1" maxOccurs="unbounded"/>
-      <xsd:element name="Address" type="AddressType"/>
+        <xsd:element name="Name" type="xsd:string"/>
+        <xsd:element name="Phone" type="PhoneNumberType" minOccurs="1" maxOccurs="unbounded"/>
+        <xsd:element name="Address" type="AddressType"/>
     </xsd:sequence>
     <xsd:attribute name="Rating" type="xsd:decimal" use="required"/>
   </xsd:complexType>
+
+  <!-- The PhoneNumberType is a simple type that restricts the format of phone numbers. -->
   <xsd:simpleType name="PhoneNumberType">
-    <xsd:restriction base="xsd:string">
-      <xsd:pattern value="\d{3}-\d{3}-\d{4}"/>
-    </xsd:restriction>
+  <xsd:restriction base="xsd:string">
+  <xsd:pattern value="\d{3}-\d{3}-\d{4}"/>
+  </xsd:restriction>
   </xsd:simpleType>
+
+  <!-- The AddressType defines the structure of the address element. -->
   <xsd:complexType name="AddressType">
     <xsd:sequence>
       <xsd:element name="Number" type="xsd:string"/>
@@ -33,4 +46,5 @@
     </xsd:sequence>
     <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
   </xsd:complexType>
+
 </xsd:schema>

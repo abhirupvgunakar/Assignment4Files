@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+  <!-- The following XML contains intentional schema violations for testing -->
   <Hotel>
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
@@ -12,8 +14,10 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
+
   <Hotel Rating="3.8">
     <Name>Hyatt Regency</Name>
+    <!-- Missing a Phone element here. -->
     <Address>
       <Number>100</Number>
       <Street>Main St</Street>
@@ -22,11 +26,13 @@
       <Zip>85001</Zip>
     </Address>
   </Hotel>
+
   <Hotel Rating="4.0">
     <Name>Marriott</Name>
     <Name>Marriott Extra</Name>
     <Phone>480-555-1212</Phone>
     <Phone>480-555-3434</Phone>
+    <!-- Unclosed <Address> tag below. -->
     <Address NearestAirport="Phoenix Sky Harbor">
       <Number>200</Number>
       <Street>Central Ave</Street>
